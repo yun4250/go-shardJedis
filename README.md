@@ -9,7 +9,7 @@ go get "github.com/zyfcn/go-shardJedis"
 ## Example
 
 ### Create a ShardInfo
-`
+```
 master := redis.NewClient(&redis.Options{
 		Addr:     "localhost:6370",
 		Password: "",
@@ -21,7 +21,7 @@ slave := redis.NewClient(&redis.Options{
 		DB:       0,
 	})
 info := NewShard("", master, slave)
-`
+```
 
 ### Create a ShardJedis
 `
